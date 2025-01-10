@@ -1,0 +1,82 @@
+body {
+  font-family: "Montserrat", sans-serif;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    color: #FFF;
+    background-color: #261C5A;
+}
+
+header h1 {
+    margin: 0;
+    padding: 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #2C2660;
+    padding: 1rem 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFF;
+    padding: 0.5rem;
+    border-bottom: 1px solid transparent;
+}
+
+nav a:hover {
+    border-bottom: 1px solid #FFF;
+}
+
+main {
+    width: 1300px;
+    display: grid;
+    margin: auto;
+    gap: 1rem;
+    margin: 2rem auto;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+main .card {
+    padding-bottom: 1.5rem;
+    border: 1px solid #CCC;
+    border-radius: 0.5rem;
+}
+
+main .card article {
+    padding: 0rem 2rem;
+}
+
+.image_right {
+    display: flex;
+    gap: 1rem;
+}
+
+img {
+    width: 275px;
+}
+
+legend {
+    font-size: 12px;
+    text-align: center;
+}
+
+main section h2 {
+    margin: 0;
+    border-radius: 0.5rem 0.5rem 0 0 ;
+    text-align: center;
+    padding: 0.75rem;
+    background-color: #DFDFDF;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background: #2B0071;
+    color: #FFF;
+    padding: 1rem;
+}
