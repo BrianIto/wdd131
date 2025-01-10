@@ -33,7 +33,7 @@ nav a:hover {
 }
 
 main {
-    width: 1300px;
+    max-width: 1300px;
     display: grid;
     margin: auto;
     gap: 1rem;
