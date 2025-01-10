@@ -3,10 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
       rel="stylesheet"
     />
+    <link href="styles/base.css" rel="stylesheet" />
     <meta name="author" content="Brian Ito" />
     <meta
       name="description"
@@ -14,7 +17,6 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>WDD 131 - Dynamic Web Fundamentals - Brian Ito</title>
-    <link href="styles/base.css" rel="stylesheet" />
     <script src="./scripts/getdates.js" defer></script>
   </head>
   <body>
@@ -48,13 +50,15 @@
           </div>
           <h4>Where am I?</h4>
           <div class="image_right">
-            <fig>
+            <figure>
               <img
                 src="./images/satellite.webp"
                 alt="Satellite view of Manaus and Amazon Rainforest"
               />
-              <legend>Satellite view of Manaus and Amazon Rainforest</legend>
-            </fig>
+              <figcaption>
+                Satellite view of Manaus and Amazon Rainforest
+              </figcaption>
+            </figure>
             <p>
               I am from Manaus, Brazil. It's located in the middle of the Amazon
               Rainforest, with a Dock in the Amazon River. It's proud for it's
@@ -68,25 +72,31 @@
       <section class="card">
         <h2>Web Link Resources</h2>
         <ul>
-          <a href="https://squoosh.app/" target="_blank"
-            ><li>Squoosh - for images compression</li></a
-          >
+          <li>
+            <a href="https://squoosh.app/" target="_blank"
+              >Squoosh - for images compression</a
+            >
+          </li>
 
-          <a href="https://coolors.co/" target="_blank"
-            ><li>Coolors.co - For contrast checking</li></a
-          >
-          <a href="https://developer.mozilla.org/en-US/" target="_blank"
-            ><li>MDN - Mozilla Developer Network for JS Documentation</li></a
-          >
-          <a href="https://css-tricks.com/" target="_blank">
-            <li>CSS Tricks</li>
-          </a>
+          <li>
+            <a href="https://coolors.co/" target="_blank"
+              >Coolors.co - For contrast checking</a
+            >
+          </li>
+          <li>
+            <a href="https://developer.mozilla.org/en-US/" target="_blank"
+              >MDN - Mozilla Developer Network for JS Documentation</a
+            >
+          </li>
+          <li>
+            <a href="https://css-tricks.com/" target="_blank"> CSS Tricks</a>
+          </li>
         </ul>
       </section>
     </main>
     <footer>
       <p>
-        Brian Ito de Oliveira Moura - Amazonas &copy
+        Brian Ito de Oliveira Moura - Amazonas &copy;
         <span id="currentyear"></span>
       </p>
       <p id="lastmodified"></p>
