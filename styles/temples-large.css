@@ -1,4 +1,10 @@
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 700px) {
+  section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1100px) {
   #menu {
     display: none;
   }
