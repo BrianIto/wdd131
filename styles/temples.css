@@ -9,7 +9,6 @@ header {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-center: center;
   padding: 1.5rem;
   background-color: #fc0;
 }
