@@ -1,0 +1,14 @@
+@media screen and (min-width: 641px) {
+  #menu {
+    display: none;
+  }
+
+  nav {
+    width: auto;
+    display: block;
+  }
+
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
