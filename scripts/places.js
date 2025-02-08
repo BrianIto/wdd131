@@ -4,8 +4,8 @@ function calculateWindChill(temperature, windSpeed) {
     return Math.round(windChill);
 }
 
-let temp = -7; //celsius
-let windSpeed = 5; //km/h
+let temp = 8; //celsius
+let windSpeed = 12; //km/h
 
 const windChill = calculateWindChill(temp, windSpeed);
 
