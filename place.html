@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Brian Ito">
+    <meta name="description" content="Place assignment for Manaus Brazil made by Brian">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Google Font Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+
+    <title>Places Assignment</title>
+    <link rel="stylesheet" href="styles/places.css">
+    <script src="scripts/places.js" defer></script>
+    <title>Manaus - Brazil | Brian Ito</title>
+</head>
+<body>
+    <header>
+        <h1 class="page_title">Manaus - Brazil</h1>       
+    </header>
+    <main>
+        <article>
+            <picture>
+                <source srcset="images/nature.webp" media="(min-width: 1100px)">
+                <img src="/images/statue.webp" alt="Manaus">
+            </picture>
+            <section>
+                <h2>Data</h2>
+                <p><b>Founded:</b> 1669</p>
+                <p><b>Area:</b> 11.401 sq. km</p>
+                <p><b>Population:</b> 2.064M</p>
+                <p><b>Languages:</b> Portuguese</p>
+                <p><b>Currency:</b> Brazilian Real (BRL)</p>
+                <p><b>TimeZone:</b>  -4 GMT (AMT)</p>
+            </section>
+            <section>
+                <h2>Weather &nbsp; 🌥️</h2>
+                <p><b>Temperature:</b> 24°C</p>
+                <p><b>Conditions:</b> Partly Cloudy</p>
+                <p><b>Wind:</b> 2km/h</p>
+                <p><b>WindChill:</b> <span id="windChill"></span> °C</p>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <p><span id="currentYear"></span> &copy - Brian Ito | Brazil</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
