@@ -1,0 +1,105 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: #fc0;
+}
+
+header h1,
+a {
+  margin: 0;
+}
+
+div {
+  background-color: #F0F0F0;
+  border: 1px solid #D3D3D3;
+  padding-bottom: 1.5rem;
+  box-shadow: .25rem .5rem 1rem rgba(0,0,0,0.12);
+}
+
+footer {
+  background-color: #fc0;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer p:first-child {
+  font-weight: 600;
+}
+
+#menu {
+  cursor: pointer;
+  font-size: 3rem;
+  margin: 0;
+  border-radius: 0.25rem;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+}
+
+#menu:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+nav.open {
+  display: flex;
+}
+
+nav a {
+  border-bottom: 1px solid transparent;
+  padding: 1rem;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  color: #000;
+}
+
+nav a:hover {
+  border-bottom: 1px solid #000;
+}
+
+#menu::before {
+  width: 3rem;
+  height: 3.5rem;
+  margin-top: -0.25rem;
+  content: "≡";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#menu.open::before {
+  content: "X";
+}
+
+h1 {
+  font-size: 1.75rem;
+  flex: 1;
+}
+
+nav {
+  display: none;
+}
+
+main {
+  text-align: center;
+}
+
+section {
+  display: grid;
+  gap: 2rem;
+  padding: 2rem;
+  grid-template-columns: 1fr;
+}
