@@ -22,7 +22,7 @@ h1 {
     border-bottom: 0.25rem solid var(--primary-color-light);
     text-align: center;
 }
-main article picture img {
+main picture img {
     width: 100%;
 }
 
@@ -44,7 +44,7 @@ footer {
 }
 
 
-main article section {
+main section {
     border-radius: 1rem;
     font-family: 'Roboto', sans-serif;
     background-color: var(--secondary-color);
@@ -54,17 +54,17 @@ main article section {
     box-shadow: 0.25rem 0.5rem 1rem rgba(0, 0, 0, 0.25);
 }
 
-main article section:first-of-type {
+main section:first-of-type {
     top: 2rem ;
     left: 2rem;
 }
 
-main article section:last-of-type {
+main section:last-of-type {
     right: 2rem;
     bottom: 2rem;
 }
 
-main article section h2 {
+main section h2 {
     background-color: var(--primary-color-light);
     padding: 0.5rem 0.75rem;
     margin: 0;
@@ -79,8 +79,16 @@ main article section h2 {
 }
 
 @media (min-width: 768px) {
-    main article section {
+    main section {
         position: absolute;
         width: 18rem;
+    }
+
+    main section:last-of-type h2::after {
+        content: '🌥️'
+    }
+
+    main section:last-of-type img {
+        display: none;
     }
 }
