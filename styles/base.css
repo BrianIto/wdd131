@@ -40,6 +40,11 @@ main {
     grid-template-columns: repeat(2, 1fr);
 }
 
+ul > li {
+	padding-top: 0.25rem;
+	margin-bottom: 0.5rem;
+}
+
 main .card {
     padding-bottom: 1.5rem;
     border: 1px solid #CCC;
