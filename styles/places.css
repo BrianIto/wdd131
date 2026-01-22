@@ -30,6 +30,11 @@ main {
     position: relative;
 }
 
+img {
+	width: 100%;
+	object-fit: cover;
+}
+
 main article {
     position: relative;
 }
