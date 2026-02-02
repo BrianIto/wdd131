@@ -1,24 +1,26 @@
 <!doctype html>
-<html>
+<html lang="en-US">
   <head>
-    <meta chartset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Brian Ito de Oliveira Moura">
     <meta name="description" content="WDD131 Product Review Form with good form design practices, meeting specific field requirements.">
     <link rel="stylesheet" href="styles/form.css">
     <title>Product Review Form</title>
     <script src="scripts/form.js" defer></script>
   </head>
   <body>
-    <main>
+    <header>
       <h1>Product Review</h1>
+    </header>
+    <main>
       <form action="review.html" method="get">
         <label for="product-name">
           Product Name
-          <p>
-            <select id="product-name" name="product-name" required>
-            </select>
-          </p>
         </label>
+        <select id="product-name" name="product-name" required>
+          <option value="" disabled selected>Choose a product...</option>
+        </select>
         <p>Overall Rating</p>
         <div class="stars">
           <input type="radio" id="rating-1" name="overall-rating" value="1" required>
@@ -29,7 +31,7 @@
           <label for="rating-3" title="3 stars"></label>
           <input type="radio" id="rating-4" name="overall-rating" value="4" required>
           <label for="rating-4" title="4 stars"></label>
-          <input type="radio" id="rating-1" name="overall-rating" value="5" required>
+          <input type="radio" id="rating-5" name="overall-rating" value="5" required>
           <label for="rating-5" title="5 stars"></label>
         </div>
         <label for="installation-date">
@@ -37,21 +39,29 @@
           <input type="date" id="installation-date" name="installation-date" required>
         </label>
         <p>Which features do you find useful in the product (Check all that apply)</p>
-        <label for="durability">
-          <p><input type="checkbox" id="durability" name="durability" value="durability"> Durability</p>
-        </label>
-        <label for="ease">
-          <p><input type="checkbox" id="ease" name="ease" value="ease"> Ease of use</p>
-        </label>
-        <label for="perf">
-          <p><input type="checkbox" id="perf" name="perf" value="perf"> Performance</p>
-        </label>
-        <label for="design">
-          <p><input type="checkbox" id="design" name="design" value="design"> Durability</p>
-        </label>
+        <p>
+          <label for="durability">
+            <input type="checkbox" id="durability" name="durability" value="durability"> Durability
+          </label>
+        </p>
+        <p>
+          <label for="ease">
+            <input type="checkbox" id="ease" name="ease" value="ease"> Ease of use
+          </label>
+        </p>
+        <p>
+          <label for="perf">
+            <input type="checkbox" id="perf" name="perf" value="perf"> Performance
+          </label>
+        </p>
+        <p>
+          <label for="design">
+            <input type="checkbox" id="design" name="design" value="design"> Durability
+          </label>
+        </p>
+        <p>Written Review <span>(optional)</span></p>
         <label for="written-review">
-          <p>Written Review <span>(optional)</span></p>
-          <textarea id="written-review"></textarea>
+          <textarea name="written-review" id="written-review"></textarea>
         </label>
         <label for="name">
           <p>Your name <span>(optional)</span></p>
@@ -62,5 +72,12 @@
         </p>
       </form>
     </main>
+    <footer>
+      <p>
+        Brian Ito de Oliveira Moura - Amazonas &copy;
+        <span id="currentyear"></span>
+      </p>
+      <p id="lastmodified"></p>
+    </footer>
   </body>
 </html>
