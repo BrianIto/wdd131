@@ -1,0 +1,64 @@
+* {
+	font-family: Atkinson Hyperlegible, sans-serif;
+ }
+
+ body {
+	 margin: 0;
+ }
+
+ main {
+	 padding: 1rem 3rem;
+ }
+
+ ul {
+	 list-style: none;
+ }
+
+ li::marker {
+	 content: ' ✔︎  ';
+	margin-right: 0.5rem;
+	margin-left: 1rem;
+ }
+
+ .colors {
+	 display: flex;
+	 gap: 2rem;
+	 margin-top: 2rem;
+	 align-items: center;
+ }
+ .color {
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 width: 6rem;
+	 height: 6rem;
+	 border-radius: 0.5rem;
+ }
+
+ .color1 {
+	 background-color: #171717;
+	 color: #FFF;
+ }
+
+ .color2 {
+	background-color: #FFB61A;
+	color: #171717;
+ }
+
+.atkinson {
+	font-family: 'Atkinson Hyperlegible', sans-serif;
+	font-size: 4rem;
+	margin: 0;
+}
+
+.instrument-serif {
+	font-family: 'Instrument Serif', serif;
+	font-size: 4rem;
+	margin: 0;
+}
+
+.typography {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
