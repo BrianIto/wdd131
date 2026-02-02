@@ -1,0 +1,92 @@
+* {
+	font-family: sans-serif;
+}
+
+body {
+	display: flex;
+}
+main {
+	margin:auto;
+	width: 90%;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 32px;
+}
+form {
+	padding: 32px;
+	background-color: #F5F5F5;
+	border-radius: 16px;
+	box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
+}
+select {
+	width: 100%;
+	padding: 8px;
+}
+
+input[type="text"], input[type="date"], textarea {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 8px;
+}
+
+input[type="submit"] {
+	width: 100%;
+	border: none;
+	background-color: #446350;
+	color: #FFF;
+	border-radius: 8px;
+	padding: 16px;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+.stars {
+	display: flex;
+	gap: 16px;
+	flex-direction: row-reverse;
+	justify-content: left;
+}
+
+.stars > label {
+	color: gold;
+	width: 30px;
+	height: 30px;
+	font-size: 2rem;
+	margin-left: 5px;
+	display: flex;
+	align-items: center;
+	caret-color: rgba(0, 0, 0, 0); /* remove blinking cursor*/
+}
+
+.stars > input[type="radio"] {
+	display: none;
+	position: relative;
+}
+
+.stars > label:hover {
+	color: #000;
+}
+
+.stars > label::before {
+	content: "\2606";
+}
+
+.stars input:checked ~ label::before {
+	content: "\2605";
+}
+
+@media (min-width: 700px) {
+	main {
+
+	width: 70%;
+	}
+}
+
+@media (min-width: 1024px) {
+main {
+	width: 50%;
+}
+}
