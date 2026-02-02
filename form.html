@@ -19,7 +19,7 @@
           Product Name
         </label>
         <select id="product-name" name="product-name" required>
-          <option value="" disabled selected>Choose a product...</option>
+          <option value="" disabled selected>Select a product...</option>
         </select>
         <p>Overall Rating</p>
         <div class="stars">
@@ -34,10 +34,12 @@
           <input type="radio" id="rating-5" name="overall-rating" value="5" required>
           <label for="rating-5" title="5 stars"></label>
         </div>
-        <label for="installation-date">
-          <p>Date of Installation</p>
-          <input type="date" id="installation-date" name="installation-date" required>
-        </label>
+        <p>
+          <label for="installation-date">
+            Date of Installation
+          </label>
+        </p>
+        <input type="date" id="installation-date" name="installation-date" required>
         <p>Which features do you find useful in the product (Check all that apply)</p>
         <p>
           <label for="durability">
@@ -63,10 +65,12 @@
         <label for="written-review">
           <textarea name="written-review" id="written-review"></textarea>
         </label>
-        <label for="name">
-          <p>Your name <span>(optional)</span></p>
-          <input id="name" type="text">
-        </label>
+        <p>
+          <label for="name">
+            Your name <span>(optional)</span>
+          </label>
+        </p>
+        <input id="name" type="text">
         <p>
           <input type="submit" value="Post Review">
         </p>
